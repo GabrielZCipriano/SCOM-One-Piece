@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Página com Login e Imagem</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .login-container {
+            flex: 1;
+            padding: 20px;
+        }
+        .image-container {
+            flex: 1;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h2>Formulário de Login</h2>
+            <form action="processar_login.php" method="post">
+                <div class="form-group">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Entrar">
+                </div>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="https://img.olhardigital.com.br/wp-content/uploads/2021/09/one-piece-scaled.jpg" alt="Imagem de fundo">
+        </div>
+    </div>
+</body>
+</html>
