@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'fonteoitobits'; /* O nome que você deseja dar à fonte */
+    src: url('Fonte_Oito_Bits.ttf') format('truetype'); /* Caminho para o arquivo de fonte */
+    /* Outras variações de formato de fonte (woff, woff2) podem ser adicionadas para compatibilidade com navegadores diferentes */
+}
+
+body {
+    margin: 10px;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(fundo_2.gif);
+}
+
+.block1 {
+    font-family: fonteoitobits;
+    width: 160px;
+    height: 60px;
+    background-color: transparent;
+    opacity: 0.85;
+    padding: 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 17px;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+.block2 {
+    font-family: fonteoitobits;
+    width: 300px;
+    height: 80px;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 28px;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+.block3 {
+    width: 23%;
+    height: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+}
+/* mute */
+.block4 {
+    background-color: transparent;
+    border: 15px;
+    border-radius: 1000px;
+    font-family: fonteoitobits;
+    width: 50%;
+    min-height: 150px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: space-around;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+/* episodio */
+.block5 {
+    font-family: fonteoitobits;
+    background-color: transparent;
+    width: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+/* volume */
+.block6 {
+    font-family: fonteoitobits;
+    background-color: transparent;
+    width: 50%;
+    min-height: 150px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+/* mudar navio */
+.block7 {
+    font-family: fonteoitobits;
+    background-color: transparent;
+    width: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+/* logoff */
+.block8 {
+    font-family: fonteoitobits;
+    background-color: transparent;
+    width: 50%;
+    min-height: 150px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+/* extra... */
+.block9 {
+    font-family: fonteoitobits;
+    background-color: transparent;
+    width: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.block1:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+.block4:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+
+#volume-control {
+    width: 300px;
+}
+
+#volume-value {
+    font-size: 24px;
+    margin-top: 10px;
+}
