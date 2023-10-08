@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn.wallpapersafari.com/45/87/ql2YgM.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 66%;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+h1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 100px; /* Adiciona margem para separar do canto */
+    margin-left: 80px;
+    font-size: 3.8em;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombreamento do texto */
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 1.7em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    margin-left: 20px;
+    width: 82%;
+    font-size: 0.9em;
+    font-weight: 700;
+    padding: 15px;
+    background-color: #eae9e9;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+.login_link{
+    margin-top: 20px;
+    font-size: 0.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(157, 157, 157);
+    padding: 12px;
+    display: block;
+    text-align: center;
+}
+.login_link:hover{
+    color: #787777;
+}
