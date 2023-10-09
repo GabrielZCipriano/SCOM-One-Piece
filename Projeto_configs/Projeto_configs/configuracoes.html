@@ -1,0 +1,99 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/1029/PNG/256/Luffys_flag_icon-icons.com_76118.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações do Jogo</title>
+    <link rel="stylesheet" href="estilo_configs.css">
+</head>
+
+<body>
+
+<!-- Voltar -->
+    <div class="block1"> 
+        <a href="C:\Users\User\Desktop\Projeto_Jogo_One_Piece_oficial\Mapa_jogo\Mapa_principal.html" class="link-sem-formatacao"> < Voltar </a>    
+    </div> 
+
+<!-- Título -->
+    <div class="block2"> 
+        Configurações 
+    </div>
+
+<!-- Vazio -->
+    <div class="block3"> </div>
+
+<!-- Vazio -->
+<div class="block11"> </div>
+
+<!-- Mute -->
+    <div class="block4" onclick="executarAcao(2)"> 
+        <p>
+            Mute 
+            <br/>
+            <img src="mute_2.png" alt="mute" width="100" height="100">
+        </p>
+    </div>
+
+<!-- Vazio -->
+<div class="block10"> </div>
+
+<!-- Episodio atual -->
+    <div class="block5">
+        <p>Qual seu episódio atual:
+        <br/>
+        <input type="text" id="resposta" placeholder="Digite sua resposta aqui">
+            <br/>
+        <button onclick="verificarResposta()">Enviar Resposta</button>
+        </p>
+    </div>
+
+<!-- Vazio -->
+<div class="block11"> </div>
+
+<!-- Vazio -->
+<div class="block11"> </div>
+
+<!-- Barra de Volume Ajustável -->
+    <div class="block6"> 
+        <input type="range" id="volume-control" min="0" max="100" step="1" value="50" onchange="updateVolume()">
+        <p id="volume-value">Volume: 50</p> 
+    </div>
+
+<!-- Vazio -->
+<div class="block10"> </div>
+
+<!-- Troca do navio -->
+    <div class="block7"> 
+        <a href="C:\Users\User\Desktop\Projeto_Jogo_One_Piece_oficial\Selecao_Navios\Selecao_Navios.html" class="link-sem-formatacao">
+            <p align = 'center'> 
+                <img src="navio_troca.png" alt="navio" width="100" height="100">
+                <br/>
+                    Mudar de navio 
+                </p>
+        </a>
+    </div>
+
+<!-- Vazio -->
+<div class="block11"> </div>
+
+<!-- Vazio -->
+<div class="block11"> </div>
+
+<!-- Logoff -->
+    <div class="block8">
+        <a href="C:\Users\User\Desktop\Projeto_Jogo_One_Piece_oficial\Login_One_Piece\Login_One_Piece.html" class="link-sem-formatacao"> Logoff</a>
+    </div>
+
+<!-- Vazio -->
+<div class="block10"> </div>
+
+<!-- Extra -->
+    <div class="block9"> 
+        <a href="extra.html" class="link-sem-formatacao">Extra...</a>
+    </div>
+
+<!-- Vazio -->
+<div class="block11"> </div>
+    <script src="acoes.js"></script>
+
+</body>
+</html>
