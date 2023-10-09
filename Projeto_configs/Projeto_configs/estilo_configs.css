@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'fonteoitobits'; /* O nome que você deseja dar à fonte */
+    src: url('Fonte_Oito_Bits.ttf') format('truetype'); /* Caminho para o arquivo de fonte */
+    /* Outras variações de formato de fonte (woff, woff2) podem ser adicionadas para compatibilidade com navegadores diferentes */
+}
+
+.link-sem-formatacao {
+    color: inherit; /* Define a cor do texto para a mesma cor do texto pai */
+    text-decoration: none; /* Remove o sublinhado */
+    /* Outros estilos desejados, como fonte, tamanho, etc. */
+  }
+
+body {
+    margin: 10px;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(fundo_3.gif);
+    background-position: center;
+    align-content: space-between;
+    align-items: center;
+}
+
+.block1 {
+    border: 15px;
+    border: solid;
+    border-radius: 90%;
+    font-family: fonteoitobits;
+    width: 15%;
+    height: 60px;
+    background-color: white;
+    opacity: 0.85;
+    padding: 1px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 17px;
+    border-radius: 20px;
+}
+.block2 {
+    font-family: fonteoitobits;
+    width: 70%;
+    height: 80px;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+.block3 {
+    width: 15%;
+    height: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+}
+/* mute */
+.block4 {
+    background-color: white;
+    opacity: 0.85;
+    border: 15px;
+    border: solid;
+    border-radius: 90%;
+    font-family: fonteoitobits;
+    width: 30%;
+    min-height: 150px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+/* episodio */
+.block5 {
+    background-color: white;
+    opacity: 0.85;
+    border: 15px;
+    border: solid;
+    border-radius: 90%;
+    font-family: fonteoitobits;
+    width: 30%;
+    min-height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+/* volume */
+.block6 {
+    background-color: white;
+    opacity: 0.85;
+    border: 15px;
+    border: solid;
+    border-radius: 90%;
+    font-family: fonteoitobits;
+    width: 30%;
+    min-height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+/* mudar navio */
+.block7 {
+    background-color: white;
+    opacity: 0.85;
+    border: 15px;
+    border: solid;
+    border-radius: 90%;
+    font-family: fonteoitobits;
+    width: 30%;
+    min-height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+/* logoff */
+.block8 {
+    background-color: white;
+    opacity: 0.85;
+    border: 15px;
+    border: solid;
+    border-radius: 90%;
+    font-family: fonteoitobits;
+    width: 30%;
+    min-height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+/* extra... */
+.block9 {
+    background-color: white;
+    opacity: 0.85;
+    border: 15px;
+    border: solid;
+    border-radius: 90%;
+    font-family: fonteoitobits;
+    width: 30%;
+    min-height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+.block10 {
+    width: 20%;
+    height: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+}
+.block11 {
+    width: 10%;
+    height: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+}
+
+.block4:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+
+#volume-control {
+    width: 300px;
+}
+
+#volume-value {
+    font-size: 24px;
+    margin-top: 10px;
+}
