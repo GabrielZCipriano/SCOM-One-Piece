@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#thePlayer{
+    position: absolute;
+    width: 315px;  
+    height: 250px;
+    z-index: 3;
+    font-family: Tahoma;
+    line-height: 5px;
+    font-size: 5px;
+    font-weight: bold;
+    padding: 2px;
+    border: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+    }
+        
+#theBackgroundImage{
+    position: absolute;
+    width: 6564px;
+    height: 4320px;
+    background: black;
+    left: 0px;
+    top: 0px;
+    opacity: 1.0;
+    z-index: -100; 
+    background-image: url("mapa_1.svg"); 
+    background-size: contain;
+    background-repeat: no-repeat;  
+    }
+#borda {
+    border: 40px;
+    border-width: 40px;
+    width: 6564px;
+    height: 4320px;
+    border: 10px solid #250707;
+    margin: auto;  
+    z-index: 101;  
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /*justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;*/
+  }
+#configs {
+    border-radius: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+    position: fixed;
+    z-index: 2;
+}
+.curiosidade {
+    height: 165;
+    width: 225;
+    padding: 10px;
+    position: fixed;
+    bottom: -30; /* Define a posição superior */
+    right: 0; /* Define a posição à esquerda */
+    border-radius: 10px; /* Define o raio das bordas */
+}
+.conteudo {
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 8;
+    right: 8;
+    border-radius: 20px; /* Define o raio das bordas */
+}
+.conteudo2 {
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 8;
+    left: 8;
+    border-radius: 20px; /* Define o raio das bordas */
+}
+#conteudo3 {
+    background-image: url(Mapa.jpeg);
+    background-position: center;
+    background-size: contain;
+    min-height: 100%;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    position: fixed;
+    border-radius: 20px; /* Define o raio das bordas */
+    display: none;
+    z-index: 4;
+}
+#button{
+    padding: 2px;
+    position: fixed;
+    bottom: 8;
+    left: 8;
+    border-radius: 20px; /* Define o raio das bordas */
+    border: none;
+    background-color: rgba(0, 203, 203, 0.082);
+    z-index: 5;
+}
