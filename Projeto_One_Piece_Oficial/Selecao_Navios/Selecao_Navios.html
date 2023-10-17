@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <link rel="icon" href="https://cdn.icon-icons.com/icons2/1029/PNG/256/Luffys_flag_icon-icons.com_76118.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Users\mathg\Desktop\Selecao_Navios\PressStart2P-vaV7.ttf" rel="stylesheet">
     <link rel="stylesheet" href="Selecao_Navios.css">
-    <title>Select Ship</title>
+    <title>Selecione seu Navio</title>
 </head>
 <body>
-
+    <?php include 'aparecer_div.php'; ?>
     <div class="vertical-container">
         <div class="header">
             <h1>Selecione o seu navio!</h1>
         </div>
-
         <div class="horizontal-container">
             <div class="card">
                 <div class="card-image">
@@ -78,9 +76,48 @@
                         <button>Navegar!</button>
                     </a>
                 </div>
-
+    <?php if ($showDiv1): ?>
+                    <div class="card-footer">
+                    <div class="info">
+                        <div class="value">1°</div>
+                        <div class="type">aparição</div>
+                    </div>
+                    <div class="info">
+                        <div class="value">436</div>
+                        <div class="type">mangá</div>
+                    </div>
+                    <div class="info">
+                        <div class="value">321</div>
+                        <div class="type">anime</div>
+                    </div>
+                </div>
+                <div class="selector">
+                    <a href="../Mapa_jogo/Mapa_principal.html">
+                        <button>Navegar!</button>
+                    </a>
+                </div>
+    <?php elseif($showDiv2): ?>
+        <div class="card-footer">
+                    <div class="info">
+                        <div class="value">1°</div>
+                        <div class="type">aparição</div>
+                    </div>
+                    <div class="info">
+                        <div class="value">436</div>
+                        <div class="type">mangá</div>
+                    </div>
+                    <div class="info">
+                        <div class="value">321</div>
+                        <div class="type">anime</div>
+                    </div>
+                </div>
+                <div class="selector">
+                    <a href="../Mapa_jogo/Mapa_principal.html">
+                        <button>Navegar!</button>
+                    </a>
+                </div>
+    <?php endif; ?>
             </div>
         </div>
-    </div>
 </body>
 </html>

@@ -37,14 +37,16 @@
 <div class="block10"> </div>
 
 <!-- Episodio atual -->
-    <div class="block5">
-        <p>Qual seu episódio atual:
+<div class="block5">
+    <p>Qual seu episódio atual:
         <br/>
-        <input type="text" id="resposta" placeholder="Digite sua resposta aqui">
+        <form method="post" action="formulario.php">
+            <input type="text" name="resposta" placeholder="Digite sua resposta aqui">
             <br/>
-        <button onclick="verificarResposta()">Enviar Resposta</button>
-        </p>
-    </div>
+            <input type="submit" value="Enviar Resposta">
+        </form>
+    </p>
+</div>
 
 <!-- Vazio -->
 <div class="block11"> </div>

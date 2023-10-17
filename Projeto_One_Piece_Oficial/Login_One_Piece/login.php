@@ -1,8 +1,9 @@
 <?php
+session_start();
 // Verifique se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Conecte-se ao banco de dados (ajuste as configurações conforme necessário)
-    $mysqli = new mysqli("127.0.0.1", "root", "", "cadastro_login_op");
+    $mysqli = new mysqli("127.0.0.1", "root", "", "one_piece");
 
     // Verifique a conexão
     if ($mysqli->connect_error) {
@@ -14,24 +15,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Consulta SQL para verificar as credenciais
-    $sql = "SELECT * FROM login WHERE username = ? AND password = ?";
-    $stmt = $mysqli->prepare($sql);
-    $stmt->bind_param("ss", $username, $password);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    $sql = "SELECT senha_cripto, salt FROM usuarios WHERE username = '$username'";
+    $result = $mysqli->query($sql);
 
-    // Verifique se a correspondência foi encontrada
-    if ($result->num_rows > 0) {
-        // Redirecione para o site desejado
-        header("Location: ../Selecao_Navios/Selecao_Navios.html");
-        exit;
+
+    // Verificação bem-sucedida, configure uma variável de sessão se o usuário for "admin" e a senha for "1080"
+    if ($username === "Kaido" && $password === "4.611.100.000") {
+        $_SESSION['senha'] = $password;
+        $_SESSION['usuario'] = $username;
+        header("Location: ../Selecao_Navios/Selecao_Navio.php");
+    } elseif ($username === "Big Mom" && $password === "4.388.000.000") {
+        $_SESSION['senha'] = $password;
+        $_SESSION['usuario'] = $username;
+        header("Location: ../Selecao_Navios/Selecao_Navios.php");
+    }
+
+    if ($result->num_rows == 1) {
+        $row = $result->fetch_assoc();
+        $hashArmazenado = $row['senha_cripto'];
+        $salt = $row['salt'];
+
+         // Verifique se a correspondência foi encontrada
+        if (password_verify($password . $salt, $hashArmazenado)) {
+
+            // Redirecione para o site desejado
+            header("Location: ../Selecao_Navios/Selecao_Navios.php");
+            exit;
+
+        } else {
+            // Senha incorreta
+            echo "Senha incorreta. Tente novamente.";
+        }
     } else {
-        // Exiba uma mensagem de erro ou recarregue a mesma página
-        echo "Credenciais incorretas. Tente novamente.";
+        // Usuário não encontrado
+        echo "Usuário incorreto. Tente novamente.";
     }
 
     // Feche a conexão
-    $stmt->close();
     $mysqli->close();
 }
 ?>
